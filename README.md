@@ -21,3 +21,13 @@ or without
 ```
 deno run --allow-net --allow-env bot.ts
 ```
+
+# Deploy
+
+Use Deno deploy to connect to Github repo.
+
+Setup with webhook to listen Telegram
+
+```
+deno task commands
+```
