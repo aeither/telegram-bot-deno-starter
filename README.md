@@ -42,7 +42,7 @@ Setup with webhook to listen Telegram.
 
 Go to `scripts/index.ts`. Update commands and PROJECT_URL.
 
-Make sure to not add / at the and of url.
+Make sure to not add `/` at the and of url.
 `const PROJECT_URL = 'https://projectname.deno.dev'`
 
 ```bash
