@@ -17,3 +17,12 @@ export const bot = new Bot(TELEGRAM_BOT_TOKEN, {
 bot.command('start', (ctx) => ctx.reply('Welcome! Up and running.'))
 
 bot.command('ping', (ctx) => ctx.reply(`Pong! ${new Date()} ${Date.now()}`))
+
+/**
+ * Other Messages
+ */
+bot.on('message', (ctx) => {
+  const chatId = ctx.message.chat.id
+  console.log(`Message received from chat ID: ${chatId}`)
+  ctx.reply('Got another message!')
+})
