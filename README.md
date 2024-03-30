@@ -2,46 +2,49 @@
 
 Deno Deploy + Grammyjs
 
-# Install
+# Setup
 
-```
+```bash
 brew install deno
 ```
 
+```bash
+cp .env.example .env.local
+```
+
+Go to Telegram Bot Father and create a new bot to get the env Token.
+
 # Run
 
-with tasks
+with tasks `deno task task-name [additional args]`
 
-```
-deno task task-name [additional args]
-```
+- dev:reload allows update conserving state while dev restart the states. dev:reload offers better UX
 
-or without
-
-```
-deno run --allow-net --allow-env bot.ts
+```bash
+deno task dev:reload
 ```
 
 # Run Webhook locally
 
-```
+```bash
 deno task start:bot
 ```
 
-```
+```bash
 ngrok http 8000
 ```
 
-# Deploy
+# Deployment
 
-Use Deno deploy to connect to Github repo.
+Publish repository to Github. Connect the repo to Deno deploy.
 
 Setup with webhook to listen Telegram.
-Update commands and PROJECT_URL in scripts/index.ts.
+
+Go to `scripts/index.ts`. Update commands and PROJECT_URL.
 
 Make sure to not add / at the and of url.
 `const PROJECT_URL = 'https://projectname.deno.dev'`
 
-```
+```bash
 deno task commands
 ```
