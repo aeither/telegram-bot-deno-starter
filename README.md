@@ -9,7 +9,7 @@ brew install deno
 ```
 
 ```bash
-cp .env.example .env.local
+cp .env.example .env
 ```
 
 Go to Telegram Bot Father and create a new bot to get the env Token.
