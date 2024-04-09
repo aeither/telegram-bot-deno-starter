@@ -49,9 +49,12 @@ Make sure to not add `/` at the and of url.
 deno task commands
 ```
 
+
 # Add environment variables
 
 ```bash
-lib/constants.ts
+cp .env.example .env.local
 ```
+
+and then go to `lib/constants.ts`
 
