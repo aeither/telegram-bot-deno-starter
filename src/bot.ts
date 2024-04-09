@@ -1,6 +1,10 @@
 import { TELEGRAM_BOT_TOKEN } from '../lib/constants.ts'
 import { Bot } from './deps.ts'
 
+/**
+ * Bot Definition
+ */
+
 export const bot = new Bot(TELEGRAM_BOT_TOKEN, {
   client: {
     timeoutSeconds: 60,
