@@ -48,3 +48,10 @@ Make sure to not add `/` at the and of url.
 ```bash
 deno task commands
 ```
+
+# Add environment variables
+
+```bash
+lib/constants.ts
+```
+
